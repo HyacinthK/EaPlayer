@@ -10,7 +10,7 @@ $str = get_option('eaplayer_options');
 	<div class="player-container">
 		<div class="player-hide-box">
 			<section class="player-header">
-				<div class="play-title">EA PLAYER @ Album by <span class="album-name"></span></div>
+				<div class="play-title">EA PLAYER @ <span class="album-name"></span></div>
 				<div class="player-music-search">
 					<form method="get" class="music-search-form" action="<?php echo home_url(); ?>" role="search">
 						<span class="ea-icon ea-search"></span>
