@@ -98,8 +98,9 @@
     outline: 0;
     resize: none;
     box-shadow: none;
+    border-radius: 3px;
     background: transparent;
-    box-shadow: 0 0 19px rgba(0,0,0,.2) inset;
+    box-shadow: 0 0 19px rgba(0,0,0,.35) inset;
 }
 
 .music-search-form span {
@@ -234,6 +235,7 @@
 .player-container {
 	position: relative;
 	z-index: 2;
+	text-shadow: 0 2px 8px #000;
 }
 
 .player-control {
@@ -275,7 +277,7 @@
     left: 0;
     width: 100%;
     z-index: 0;
-    height: 50px;
+    height: 53px;
 }
 
 .progress-sider .sider-loaded,
@@ -283,7 +285,7 @@
     position: absolute;
     height: 100%;
     opacity: .7;
-    height: 50px;
+    height: 53px;
     cursor: pointer;
 }
 
@@ -293,7 +295,7 @@
 
 .progress-sider .sider-pace {
     background: #fff;
-    height: 50px;
+    height: 53px;
     opacity: .09;
 }
 
