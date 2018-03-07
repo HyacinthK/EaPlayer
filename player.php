@@ -70,6 +70,6 @@ $str = get_option('eaplayer_options');
 			</div>
 		</div>
 	</div><!-- .player-container ##-->
-	<div id="key" data-id="<?php echo $str['mid'] ?>" data-type="<?php echo $str['type'] ?>" data-source="<?php echo $str['source'] ?>" data-api="<?php echo PLAYER_URL; ?>" data-autoplay="<?php echo $str['autoplay']; ?>" data-shuffle="<?php echo $str['shuffle']; ?>" data-search="netease"></div>
+	<div id="key" data-id="<?php echo $str['mid'] ?>" data-type="<?php echo $str['type'] ?>" data-source="<?php echo $str['source'] ?>" data-api="<?php echo PLAYER_URL; ?>" data-autoplay="<?php echo $str['autoplay']; ?>" data-shuffle="<?php echo $str['shuffle']; ?>" data-search="tencent"></div>
 	<audio id="audio" type="audio/mpeg"></audio>
 </div>
