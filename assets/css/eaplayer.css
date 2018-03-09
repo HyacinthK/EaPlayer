@@ -20,7 +20,7 @@
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     transform: scale(1.1);
-    opacity: .4;
+    opacity: .5;
     font: 300 17px miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
 }
 
@@ -325,6 +325,7 @@
     max-width: 86px;
     height: 4px;
     background: rgba(255,255,255,.35);
+    box-shadow: 0 2px 8px rgba(0,0,0,.4);
 }
 
 .volume-sider .sider-pace {

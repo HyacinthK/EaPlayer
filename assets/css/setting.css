@@ -4,10 +4,10 @@
 	position: relative;
 	max-width: 445px;
 	height: 275px;
-	margin: auto;
+	margin: 4em auto 0;
 	background: #fff;
 	border-radius: 4px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.05);
+    box-shadow: 3px 3px 10px rgba(0,0,0,.1);
 }
 
 .eaplayer-page-inner {

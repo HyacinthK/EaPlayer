@@ -61,7 +61,7 @@ function admin_eaplayer_scripts() {
     wp_enqueue_style( 'eaplayer-setting', PLAYER_URL . '/assets/css/setting.css', array(), PLAYER_VERSION, 'all' );  
 }  
 function eaplayerSetting() {
-    add_menu_page('播放器设置页', 'EA PLAYER', 'manage_options', __FILE__, 'eaplayer_page');
+    add_menu_page('播放器设置页', 'Ea Player', 'manage_options', __FILE__, 'eaplayer_page');
 }
 function eaplayerOptions() {
     register_setting('eaplayer_setting_group', 'eaplayer_options');
