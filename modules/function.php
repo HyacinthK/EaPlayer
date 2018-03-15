@@ -7,7 +7,11 @@
 
 # 加载静态文件
 if (!wp_is_mobile()) {
-	add_action('wp_enqueue_scripts', 'eaplayer_scripts');
+    add_action('wp_enqueue_scripts', 'eaplayer_scripts');
+} else {
+    if (get_option('eaplayer_options')['mobile'] == 'yes') {
+        add_action('wp_enqueue_scripts', 'eaplayer_scripts');
+    }
 }
 function eaplayer_scripts() {
     wp_enqueue_style('player', PLAYER_URL . '/assets/css/eaplayer.css', array(), PLAYER_VERSION, 'all');
@@ -20,7 +24,11 @@ add_action('wp_footer', 'eaplayer_html');
 function eaplayer_html() {
 	if (!wp_is_mobile()) {
 		require PLAYER_PATH . '/player.php';
-	}
+	} else {
+        if (get_option('eaplayer_options')['mobile'] == 'yes') {
+            require PLAYER_PATH . '/player.php';
+        }
+    }
 }
 
 # 启用文章歌单
@@ -108,6 +116,9 @@ function eaplayer_page() {
                         </div>
                         <div class="shuffle">
                             <input type="checkbox" name="eaplayer_options[shuffle]" value="true" <?php checked('true',$str['shuffle']); ?> /><span>随机播放</span>
+                        </div>
+                        <div class="mobile">
+                            <input type="checkbox" name="eaplayer_options[mobile]" value="yes" <?php checked('yes',$str['mobile']); ?> /><span>开启移动端</span>
                         </div>
                         <input type="submit" name="save" class="button" value="保存设置" />
                     </div>
