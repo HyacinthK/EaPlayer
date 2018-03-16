@@ -108,7 +108,15 @@ function eaplayer_page() {
                             <li><input type="radio" name="eaplayer_options[color]" class="ea-color" value="#4e9225" <?php checked('#4e9225', $str['color']); ?> /><span style="background-color: #4e9225"></span></li>
                             <li><input type="radio" name="eaplayer_options[color]" class="ea-color" value="#255a92" <?php checked('#255a92', $str['color']); ?> /><span style="background-color: #255a92"></span></li>
                             <li><input type="radio" name="eaplayer_options[color]" class="ea-color" value="#92257f" <?php checked('#92257f', $str['color']); ?> /><span style="background-color: #92257f"></span></li>
+                            <li><input type="radio" name="eaplayer_options[color]" class="ea-color" value="#333333" <?php checked('#333333', $str['color']); ?> /><span style="background-color: #333333"></span></li>
                         </ul>
+                        <div class="color-custom">
+                            <label>双色渐变：</label>
+                            <label><input type="color" name="eaplayer_options[custom_color_1]" value="<?php echo $str['custom_color_1']; ?>"> + </label>
+                            <label><input type="color" name="eaplayer_options[custom_color_2]" value="<?php echo $str['custom_color_2']; ?>"> = </label>
+                            <label class="color-custom-radio" style="background: linear-gradient(to right,<?php echo $str['custom_color_1']?>,<?php echo $str['custom_color_2']?> 100%)"><span class="color-custom-demo" ></span><input type="radio" name="eaplayer_options[color]" class="ea-color" value="linear-gradient(to right,<?php echo $str['custom_color_1']?>,<?php echo $str['custom_color_2'];?> 100%)" <?php checked('linear-gradient(to right,'.$str['custom_color_1'].','.$str['custom_color_2'].' 100%)', $str['color']); ?> /></label>
+                            <label title="选择新的颜色后需要再次选择并保存，否则新颜色不会生效。" style="margin-left:5px;">[💬]</label>
+                        </div>
                     </div>
                     <div class="block-three">
                         <div class="autoplay">

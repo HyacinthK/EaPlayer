@@ -6,7 +6,7 @@
  */
 $str = get_option('eaplayer_options');
 ?>
-<div class="player-layer" style="background-color: <?php echo $str['color'];?>">
+<div class="player-layer" style="background: <?php echo $str['color'];?>">
 	<div class="player-container">
 		<div class="player-hide-box">
 			<section class="player-header">
