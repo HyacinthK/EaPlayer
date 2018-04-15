@@ -93,7 +93,7 @@
 	font-size: 14px;
 	padding: 6px 4px 6px 28px;
 	border: 0;
-	;
+	width: 246px;
     box-sizing: border-box;
 	outline: 0;
 	resize: none;
@@ -106,6 +106,7 @@
 .music-search-form span {
 	position: absolute;
 	left: 7px;
+	top: -5px;
 	color: #ccc;
 }
 
